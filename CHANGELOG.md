@@ -11,6 +11,47 @@ Please add your entries in this format:
 - `- [ ] (<plugin name>|website|core|meta|build|test): <Present tense verb> <subject> \(<list of associated owners/gh-issues>\)`.
 
 In the current stage we aim to release a new version at least every month.
+## 2.8.0
+
+Released: 2022-03-16
+
+| Package              | Version | Package              | Version |
+| -------------------- | ------- | -------------------- | ------- |
+| @uppy/audio          |   0.3.0 | @uppy/locales        |   2.0.8 |
+| @uppy/aws-s3         |   2.0.8 | @uppy/provider-views |   2.0.8 |
+| @uppy/companion      |   3.4.0 | @uppy/vue            |   0.4.6 |
+| @uppy/compressor     |   0.2.3 | @uppy/robodog        |   2.4.0 |
+| @uppy/core           |   2.1.6 | uppy                 |   2.8.0 |
+| @uppy/drop-target    |   1.1.2 |                      |         |
+
+- @uppy/aws-s3: fix wrong events being sent to companion (Mikael Finstad / #3576)
+- @uppy/compressor: ignore remote files, calculate savings correctly (Artur Paikin / #3578)
+- @uppy/companion: always log errors with stack trace (Mikael Finstad / #3573)
+- meta: remove incorrect s3 documentation (Mikael Finstad / #3571)
+- @uppy/companion: Companion refactor (Mikael Finstad / #3542)
+- website: partial ooops (Artur Paikin)
+- meta: run e2e workflow on the head branch instead of the base one (Antoine du Hamel / #3561)
+- website: Use Plausible instead of Google Analytics (Artur Paikin / #3567)
+- @uppy/vue: enforce use of file extension within the import path (Antoine du Hamel / #3560)
+- @uppy/drop-target: ignore if dropped elements aren't files (Penar Musaraj / #3563)
+- @uppy/core: Abstract restriction logic in a new Restricter class (Merlijn Vos / #3532)
+- @uppy/companion: Fetch all Google Drive shared drives (Robert DiMartino / #3553)
+- website: add blog post 2.4-2.7 (Artur Paikin / #3557)
+- meta: fix e2e (Antoine du Hamel / #3562)
+- meta: fix broken link (YukeshShr / #3559)
+- meta: fix support of export declaration in source files (Antoine du Hamel / #3558)
+- @uppy/companion: Order Google Drive results by folder to show all folders first (Robert DiMartino / #3546)
+- meta: add corsOrigins to docs (Mikael Finstad / #3554)
+- @uppy/audio: refactor to ESM (Antoine du Hamel / #3470)
+- @uppy/locales: compressor cleanup (Antoine du Hamel / #3531)
+- meta: fix CJS interop in Vite config (Antoine du Hamel / #3543)
+- @uppy/companion: upgrade node-redis-pubsub (Mikael Finstad / #3541)
+- @uppy/provider-views: provider-view: fix breadcrumbs (Artur Paikin / #3535)
+- meta: Update BACKLOG.md (Artur Paikin)
+- @uppy/locales: Update ru_RU.js (Sobakin Sviatoslav / #3529)
+- @uppy/companion: reorder reqToOptions (Antoine du Hamel / #3530)
+- meta: Fix yarn caching in github actions (Mikael Finstad / #3526)
+
 
 ## 2.7.0
 
@@ -28,11 +69,8 @@ Released: 2022-03-02
 - @uppy/angular: update ng version (Antoine du Hamel / #3503)
 - @uppy/companion: Upload protocol "s3-multipart" does not use the chunkSize option (Gabi Ganam / #3511)
 - @uppy/aws-s3-multipart: Add chunks back to prepareUploadParts, indexed by partNumber (Kevin West / #3520)
-- website: Add “Stop the war” banner (Artur Paikin / #3518)
 - @uppy/locales: Update zh_CN.js (linxunzyf / #3513)
 - meta: update remark dependencies (Antoine du Hamel / #3502)
-
-
 ## 2.6.0
 
 Released: 2022-02-17
@@ -48,8 +86,6 @@ Released: 2022-02-17
 - meta: fix CDN bundle (Antoine du Hamel / #3494)
 - meta: fix missing EOL and end of e2e test templates (Antoine du Hamel / #3484)
 - meta: use a single `.env` file for config (Antoine du Hamel / #3498)
-
-
 ## 2.5.1
 
 Released: 2022-02-16
@@ -65,8 +101,6 @@ Released: 2022-02-16
 - @uppy/compressor: Add image compressor plugin (Artur Paikin / #3471)
 - @uppy/companion: fix periodicPingUrls oops (Mikael Finstad / #3490)
 - meta: add support for ESM sources in build script (Antoine du Hamel / #3468)
-
-
 ## 2.5.0
 
 Released: 2022-02-14
@@ -105,8 +139,6 @@ Released: 2022-02-14
 - website: add legacy bundle to CDN example (Antoine du Hamel / #3433)
 - meta: remove unused lerna and npm files (Antoine du Hamel / #3436)
 - meta: replace browserify with esbuild (Antoine du Hamel / #3363)
-
-
 ## 2.4.1
 
 Released: 2022-01-12
@@ -122,8 +154,6 @@ Released: 2022-01-12
 - meta: Update ci.yml (Kevin van Zonneveld / #3428)
 - @uppy/transloadit: simplify `#onTusError` (Antoine du Hamel / #3419)
 - meta: Force include babel numeric separator (Merlijn Vos / #3422)
-
-
 ## 2.4.0
 
 Released: 2022-01-10
@@ -147,7 +177,6 @@ Released: 2022-01-10
 - website: Polished the latest update blog (AJvanLoon / #3390)
 - website: docs: fix typo in audio.md (heocoi / #3389)
 - website: 2.0-2.3 post draft (Artur Paikin / #3370)
-
 
 ## 2.3.3
 

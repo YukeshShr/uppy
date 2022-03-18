@@ -78,7 +78,7 @@ module.exports = {
     'global-require': ['warn'],
     'import/no-unresolved': ['warn'],
     'import/order': ['warn'],
-    'max-classes-per-file': ['warn'],
+    'max-classes-per-file': ['warn', 2],
     'no-mixed-operators': ['warn'],
     'no-param-reassign': ['warn'],
     'no-redeclare': ['warn'],
@@ -174,6 +174,7 @@ module.exports = {
         // Packages that have switched to ESM sources:
         'packages/@uppy/audio/src/**/*.js',
         'packages/@uppy/compressor/src/**/*.js',
+        'packages/@uppy/vue/src/**/*.js',
       ],
       parserOptions: {
         sourceType: 'module',
@@ -205,6 +206,7 @@ module.exports = {
             message: 'Use import instead',
           },
         ],
+        'import/extensions': ['error', 'ignorePackages'],
       },
     },
     {
