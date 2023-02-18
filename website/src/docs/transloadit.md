@@ -137,7 +137,7 @@ The default will try to route traffic efficiently based on the location of your 
 
 Limit the amount of uploads going on at the same time (`number`, default: `5`).
 
-Setting this to `0` means no limit on concurrent uploads, but we recommend a value between `5` and `20`. This option is passed through to the [`@uppy/tus`](/docs/upload-strategies/tus) plugin, which this plugin uses internally.
+Setting this to `0` means no limit on concurrent uploads, but we recommend a value between `5` and `20`. This option is passed through to the [`@uppy/tus`](/docs/tus) plugin, which this plugin uses internally.
 
 ### `assemblyOptions`
 

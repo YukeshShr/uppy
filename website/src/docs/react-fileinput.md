@@ -38,7 +38,7 @@ Import general Core styles from `@uppy/core/dist/style.css` first, then add the 
 
 ## Props
 
-The `<FileInput />` component supports all [FileInput](/docs/file-input/) options as props. Additionally, an Uppy instance must be provided in the `uppy={}` prop: see [Initializing Uppy](/docs/react/initializing) for details.
+The `<FileInput />` component supports all [FileInput](/docs/file-input/) options as props. Additionally, an Uppy instance must be provided in the `uppy={}` prop: see [Initializing Uppy](/docs/react) for details.
 
 ```js
 import React from 'react'
